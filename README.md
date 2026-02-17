@@ -1,1 +1,22 @@
 # Matrix-addition
+X = [[8, 5, 1],
+     [9, 3, 2],
+     [4, 6, 3]]
+Y = [[8, 5, 3],
+     [9, 5, 7],
+     [9, 4, 1]]
+result = [[0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0]]
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] + Y[i][j]
+print("Result of matrix addition:")
+for k in result:
+    print(k)
+
+OUTPUT:
+Result of matrix addition:
+[16, 10, 4]
+[18, 8, 9]
+[13, 10, 4]
